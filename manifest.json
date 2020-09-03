@@ -5,7 +5,10 @@
     "manifest_version": 2,
     "permissions": [
         "contextMenus",
-        "activeTab"
+        "activeTab",
+        "tabs",
+        "http://*/",
+        "https://*/"
     ],
     "background": {
         "scripts": [
@@ -14,6 +17,6 @@
     },
     "content_scripts": [{
         "matches": ["*://*/*"],
-        "js": ["content.js"]
+        "js": ["utils.js", "removeAdBlockerBlocker.js", "blockPaywall.js"]
     }]
 }
