@@ -1,0 +1,19 @@
+{
+    "name": "Add block but keep reading website extensions",
+    "description": "Allow user to keep reading website that display popups asking us to remove adblocker",
+    "version": "0.1",
+    "manifest_version": 2,
+    "permissions": [
+        "contextMenus",
+        "activeTab"
+    ],
+    "background": {
+        "scripts": [
+            "context.js"
+        ]
+    },
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["content.js"]
+    }]
+}
