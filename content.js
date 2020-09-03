@@ -12,5 +12,7 @@ const elementsToHide = ["subscribe-modal"];
 
 elementsToHide.forEach(elementToHide => {
     const elem = document.getElementById(elementToHide);
-    elem.remove();
+    if (elem !== null) {
+        elem.remove();
+    }
 })
