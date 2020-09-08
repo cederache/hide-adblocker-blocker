@@ -6,6 +6,5 @@ Currently the website handled by this extension are :
 
 I also added a paywall blocker working for these technos :
 * [poool](https://poool.fr)
-* [poool](https://poool.fr)
 
 Feel free to declare an issue with the website url that have such AdBlock blocker or the paywall techno that are not handled by this extension
