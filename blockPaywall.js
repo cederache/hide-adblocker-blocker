@@ -1,6 +1,7 @@
 removeElementsWithIds(["poool-widget", "poool-free-intro"]);
 removeScriptsWithUrls(["https://assets.poool.fr/poool.min.js"]);
-window.onload = function() {
+
+window.addEventListener('load', function() {
     [].slice.call(document.getElementsByClassName("u-hidden")).forEach(elem => {
         if (elem.getAttribute("data-ae-poool") !== null) {
             elem.setAttribute("style", "");
@@ -14,4 +15,4 @@ window.onload = function() {
         }
     });
     removeElementsWithClasses(["u-hidden", "p3-paywall", "poool-locked", "paywall-processed"]);
-};
+});
